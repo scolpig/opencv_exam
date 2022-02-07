@@ -99,6 +99,7 @@ class Exam(QWidget, form_window):
                           abs(self.start_pos[1] - event.y())*2), 0),
                     self.paintcolor, self.brush)
         self.img_to_label(self.img)
+        self.start_pos = None
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     mainWindow = Exam()
